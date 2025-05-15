@@ -1,0 +1,154 @@
+ @charset "UTF-8";  /* USADO PARA NAO TER PROBLEMAS COM ACENTUAÇAO */
+
+/* -- ----------------------------------------------------------------------- -- */
+/* CFG GERAL  */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+
+/* -- ----------------------------------------------------------------------- -- */
+/* FONTE 01  */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Share+Tech&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.sriracha-regular {
+  font-family: "Sriracha", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.share-tech-regular {
+  font-family: "Share Tech", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root{
+    --font01:  Verdana, Geneva, Tahoma, sans-serif;
+    --font02: "Share Tech", sans-serif;
+    --font03: "Sriracha", cursive;
+
+}
+
+
+/* -- ----------------------------------------------------------------------- -- */
+html, body{
+    min-height: 100vh;
+    background-color: darkgrey;
+    font-family: var(--font01);
+}
+
+
+
+
+/* -- ----------------------------------------------------------------------- -- */
+
+/* HEADER TOPO DA PAGINA */
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;   
+}
+
+/* titulo do topo */
+header > h1 {
+    padding: 50px;
+    font-variant: small-caps; /*AS PRIMEIRAS LETRAS EM MAIUSCULO*/
+    font-family: var(--font02);
+    font-size: 10vh;
+    
+}
+
+/* paragrafo do topo */
+header > p {
+    padding-bottom: 50px;
+
+}
+/* -- ----------------------------------------------------------------------- -- */
+
+
+
+/* LINKS HEADER E FOOTER */
+
+/* configuração do link do topo */
+/* 'header a, footer a'  links sobre, topo e rodapé*/
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* quando passar o mouse por cima do link  */
+/* 'header a:hover, footer a:hover'  links sobre, topo e rodapé*/
+header a:hover, footer a:hover { 
+    text-decoration: underline; /* Decoração do texto em linha */
+    color: blue;
+
+}
+
+/* -- ----------------------------------------------------------------------- -- */
+
+/* Sessão geral */
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-family: var(--font03);
+    font-size: 3.5vh;
+}
+section > p {
+    padding-bottom: 2em;
+}
+section.normal {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    
+}
+section.imagem {
+    color: white;
+    background-color: gray;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.549); /* COLOCANDO SOMBRA DENTRO DA FT */
+    background-attachment: fixed;
+}
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.514);
+    /* width: 400px; */
+    display: inline-block;
+}
+section#img01 {
+    background-image: url(imagens/background001.jpg) ;
+    background-position: right center;   
+}
+section#img02 {
+    background-image: url(imagens/background002.jpg) ;
+    background-position: left;   
+}
+/* -- ----------------------------------------------------------------------- -- */
+
+
+
+
+
+
+
+/* -- ----------------------------------------------------------------------- -- */
+/* rodapé do site */
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+
+}
+
+
+
